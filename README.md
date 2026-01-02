@@ -6,3 +6,6 @@
 
 # Home After Entry
 <img width="1440" height="3120" alt="image" src="https://github.com/user-attachments/assets/48184627-ad6c-47e0-90e9-bc34e92b0793" />
+
+# Firestore
+<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/d3aad622-3074-4e76-8240-e72a7a30069a" />
