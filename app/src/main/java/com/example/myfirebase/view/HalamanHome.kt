@@ -74,7 +74,7 @@ fun HomeScreen(
     ) { innerPadding ->
         HomeBody(
             siswaUiState = viewModel.statusUiSiswa,
-            onItemClick = navigateToItemUpdate,
+            onSiswaClick = navigateToItemUpdate,
             retryAction = viewModel::loadSiswa,
             modifier = modifier
                 .padding(innerPadding)
@@ -86,15 +86,15 @@ fun HomeScreen(
 @Composable
 fun HomeBody(
     siswaUiState: StatusUiSiswa,
+    onSiswaClick: (Int) -> Unit,
     retryAction: () -> Unit,
-    onItemClick: (Int) -> Unit,
     modifier: Modifier = Modifier
 ) {
     when (siswaUiState) {
         is StatusUiSiswa.Loading -> OnLoading(modifier = modifier)
         is StatusUiSiswa.Success -> DaftarSiswa(
             siswaList = siswaUiState.siswa,
-            onItemClick = {onItemClick(it.id.toInt())},
+            onSiswaClick = {onSiswaClick(it.id.toInt())},
             modifier = modifier.fillMaxWidth()
         )
         is StatusUiSiswa.Error -> OnError(retryAction = retryAction, modifier = modifier)
@@ -131,7 +131,7 @@ fun OnError(retryAction: () -> Unit, modifier: Modifier = Modifier) {
 @Composable
 fun DaftarSiswa(
     siswaList: List<Siswa>,
-    onItemClick: (Siswa) -> Unit,
+    onSiswaClick: (Siswa) -> Unit,
     modifier: Modifier = Modifier
 ) {
     LazyColumn(modifier = modifier) {
@@ -140,7 +140,7 @@ fun DaftarSiswa(
                 siswa = person,
                 modifier = Modifier
                     .padding(dimensionResource(id = R.dimen.padding_small))
-                    .clickable { onItemClick(person) }
+                    .clickable { onSiswaClick(person) }
             )
         }
     }
