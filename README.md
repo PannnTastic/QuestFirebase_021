@@ -20,7 +20,7 @@
 <img width="1080" height="2424" alt="image" src="https://github.com/user-attachments/assets/4d6b0fc0-2441-4981-8fb2-781ca6918867" />
 
 # Home After Delete
-<img width="1080" height="2424" alt="image" src="https://github.com/user-attachments/assets/c80a03c9-d029-44e6-b027-83df2cc7eed9" />
+<img width="1440" height="3120" alt="image" src="https://github.com/user-attachments/assets/02d024af-7544-4baa-b931-a419749e3706" />
 
 # Firestore
 <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/d3aad622-3074-4e76-8240-e72a7a30069a" />
