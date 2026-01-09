@@ -24,7 +24,7 @@ class DetailViewModel(savedStateHandle: SavedStateHandle,private val repositoryS
         private set
 
     init {
-
+        getSatuSiswa()
     }
 
     fun getSatuSiswa(){
